@@ -1,5 +1,5 @@
 fn main() {
-    println!("hello,asdasd")
+    println!("not hello");
 }
 
 fn first_word(s: &String) -> usize {
@@ -7,7 +7,7 @@ fn first_word(s: &String) -> usize {
 
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
-            return 1;
+            return i;
         }
     }
     s.len()
