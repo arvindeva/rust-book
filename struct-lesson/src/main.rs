@@ -10,7 +10,7 @@ fn main() {
         active: true,
         username: String::from("someusernamed123"),
         email: String::from("someone@example.com"),
-        sign_in_count: 1,
+        sign_in_count: 10,
     };
     println!("{}", user1.username);
     println!("{}", user1.email);
