@@ -5,6 +5,15 @@ struct User {
     sign_in_count: u64,
 }
 
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username: username,
+        email: email,
+        sign_in_count: 1,
+    }
+}
+
 fn main() {
     let user1 = User {
         active: true,
@@ -12,8 +21,4 @@ fn main() {
         email: String::from("someone@example.com"),
         sign_in_count: 10,
     };
-    println!("{}", user1.username);
-    println!("{}", user1.email);
-    println!("{}", user1.sign_in_count);
-    println!("{}", user1.active);
 }
